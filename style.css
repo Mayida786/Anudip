@@ -1,0 +1,93 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  padding: 40px;
+  margin: 0;
+}
+
+/* Container Styling */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  max-width: 550px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.01);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #00695c;
+  margin-bottom: 25px;
+}
+
+/* Form Labels and Inputs */
+label {
+  font-weight: 500;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus {
+  border: 1px solid #26a69a;
+  outline: none;
+}
+
+/* Radio and Checkbox Section */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* Button Styling */
+button {
+  display: block;
+  background-color: #00897b;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto 0 auto;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00695c;
+}
+
+/* Product Section */
+.product {
+  margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+p {
+  font-weight: 500;
+  color: #444;
+  margin: 15px 0 5px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Background Color</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s ease;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #changeColorBtn {
+      padding: 15px 30px;
+      background-color: #00897b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    #changeColorBtn:hover {
+      background-color: #00695c;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="changeColorBtn">Change Background Color</button>
+
+  <script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    const button = document.getElementById('changeColorBtn');
+    button.addEventListener('click', () => {
+      document.body.style.backgroundColor = getRandomColor();
+    });
+  </script>
+
+</body>
+</html>
